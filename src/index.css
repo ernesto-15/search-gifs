@@ -5,37 +5,31 @@
   box-sizing: border-box;
 }
 
-body {
+#root {
   margin: 0;
   padding: 60px;
 }
 
-input {
-  width: 100%;
-  font-size: 1.3rem;
-  color: gray;
+body {
+  /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+  background-image: linear-gradient(to top, #537895 0%, #09203f 100%);
 }
 
-.card {
-  /* align-content: center; */
-  border: 1px solid red;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-.card p {
-  padding: 5px;
+h1 {
+  font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 1rem;
+  color: white;
 }
 
-.card img {
-  max-height: 170px;
-}
+@media (min-width: 768px) {
+  hr {
+    max-width: 1000px;
+    margin: 15px auto;
+  }
 
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
 }
