@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import GifGridItem from './GifGridItem';
 import './styles/GifGrid.css';
 import { useFetchGifs } from '../hooks/useFetchGifs';
@@ -6,8 +6,16 @@ import { useFetchGifs } from '../hooks/useFetchGifs';
 const GifGrid = ({ category }) => {
   const { data, loading } = useFetchGifs(category);
 
+  useEffect(() => {
+    if (data) {
+      console.log(data);
+    }
+  }, [data]);
+
   if (loading && !data) {
-    return <p>Loading...</p>;
+    return (
+      <p className="loading animate__animated animate__heartBeat animate__infinite"></p>
+    );
   }
 
   return (
