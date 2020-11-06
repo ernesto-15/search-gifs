@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import GifGridItem from './GifGridItem';
 import './styles/GifGrid.css';
 import { useFetchGifs } from '../hooks/useFetchGifs';
