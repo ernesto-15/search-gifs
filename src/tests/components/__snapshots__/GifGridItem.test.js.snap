@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests in GifGridItem component should show component 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="test gif"
+    src="https://media1.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif?cid=5387cba3j9e063tiwnc295ppe1z8kq1ua2oigkzvhjtu8gym&rid=giphy.gif"
+  />
+</div>
+`;
