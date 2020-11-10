@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests in GifGrid component should show component 1`] = `
+<div
+  className="container"
+>
+  <h3>
+    Rick and Morty
+  </h3>
+  <p
+    className="loading animate__animated animate__heartBeat animate__infinite"
+  />
+  <div
+    className="card-grid"
+  />
+</div>
+`;
+
+exports[`tests in GifGrid component should show items when images are feteched with useFetchGifs 1`] = `
+<div
+  className="container"
+>
+  <h3>
+    Rick and Morty
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="abc"
+      key="abc"
+      title="idk"
+      url="https://yes/yes.jpg"
+    />
+    <GifGridItem
+      id="abcd"
+      key="abcd"
+      title="idk2"
+      url="https://yes/yes.jpg"
+    />
+  </div>
+</div>
+`;
